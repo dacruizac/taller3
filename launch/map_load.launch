@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="map_file" default="$(find taller3)/map/map_karto.yaml"/>
+
+    <!-- Map server -->
+    <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
+</launch>
